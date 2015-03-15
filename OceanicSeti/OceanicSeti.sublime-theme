@@ -5,7 +5,7 @@
     // Tab set
     {
         "class": "tabset_control",
-        "layer0.texture": "Seti_UI/Main/tabset-background.png",
+        "layer0.texture": "OceanicSeti/Main/tabset-background.png",
         "layer0.inner_margin": [1, 7],
         "layer0.opacity": 1,
         "content_margin": [0,0,4,4],
@@ -43,7 +43,7 @@
         "max_margin_trim": 0,
         "hit_test_level": 0,
         "content_margin": [12, 3],
-        "layer0.texture": "Seti_UI/Main/tab-inactive.png",
+        "layer0.texture": "OceanicSeti/Main/tab-inactive.png",
         "layer0.inner_margin": 5,
         "layer0.opacity": 1
     },
@@ -62,7 +62,7 @@
     {
         "class": "tab_control",
         "attributes": ["selected"],
-        "layer0.texture": "Seti_UI/Main/tab-active.png"
+        "layer0.texture": "OceanicSeti/Main/tab-active.png"
     },
     // Tab dirty state (close button hidden)
     {
@@ -78,7 +78,7 @@
     // Tab close button
     {
         "class": "tab_close_button",
-        "layer0.texture": "Seti_UI/Main/close@2x.png",
+        "layer0.texture": "OceanicSeti/Main/close@2x.png",
         "layer0.opacity": 1,
         "layer0.tint": [170,170,170]
     },
@@ -103,7 +103,7 @@
     {
         "class": "tab_close_button",
         "parents": [{"class": "tab_control","attributes": ["dirty"]}],
-        "layer0.texture": "Seti_UI/Main/circle@2x.png",
+        "layer0.texture": "OceanicSeti/Main/circle@2x.png",
         "layer0.tint": [79,153,211],
         "layer0.opacity": 1
     },
@@ -117,7 +117,7 @@
     {
         "class": "tab_close_button",
         "parents": [{"class": "tab_control","attributes": ["dirty","hover"]}],
-        "layer0.texture": "Seti_UI/Main/close.png",
+        "layer0.texture": "OceanicSeti/Main/close.png",
         "layer0.opacity": 1,
         "layer0.tint": [79,153,211]
     },
@@ -157,7 +157,8 @@
     {
         "class": "tab_label",
         "fade": true,
-        "fg": [170,170,170]
+        "fg": [170,170,170],
+        "font.face": "InputSansCompressed-Light"
     },
     {
         "class": "tab_label",
@@ -183,39 +184,39 @@
     {
         "class": "show_tabs_dropdown_button",
         "content_margin": [10,8],
-        "layer0.texture": "Seti_UI/Main/tabset-list-hover@2x.png",
+        "layer0.texture": "OceanicSeti/Main/tabset-list-hover@2x.png",
         "layer0.opacity": 1
     },
     {
         "class": "show_tabs_dropdown_button",
         "attributes": ["hover"],
-        "layer0.texture": "Seti_UI/Main/tabset-list@2x.png",
+        "layer0.texture": "OceanicSeti/Main/tabset-list@2x.png",
         "layer0.opacity": 1
     },
     // Tab scroll left
     {
         "class": "scroll_tabs_left_button",
         "content_margin": [9, 7, 8, 6],
-        "layer0.texture": "Seti_UI/Main/tabset-left-hover@2x.png",
+        "layer0.texture": "OceanicSeti/Main/tabset-left-hover@2x.png",
         "layer0.opacity": 1
     },
     {
         "class": "scroll_tabs_left_button",
         "attributes": ["hover"],
-        "layer0.texture": "Seti_UI/Main/tabset-left@2x.png",
+        "layer0.texture": "OceanicSeti/Main/tabset-left@2x.png",
         "layer0.opacity": 1
     },
     // Tab scroll right
     {
         "class": "scroll_tabs_right_button",
         "content_margin": [9, 7, 8, 6],
-        "layer0.texture": "Seti_UI/Main/tabset-right-hover@2x.png",
+        "layer0.texture": "OceanicSeti/Main/tabset-right-hover@2x.png",
         "layer0.opacity": 1
     },
     {
         "class": "scroll_tabs_right_button",
         "attributes": ["hover"],
-        "layer0.texture": "Seti_UI/Main/tabset-right@2x.png",
+        "layer0.texture": "OceanicSeti/Main/tabset-right@2x.png",
         "layer0.opacity": 1
     },
 
@@ -225,7 +226,7 @@
 
     {
         "class": "fold_button_control",
-        "layer0.texture": "Seti_UI/Main/fold-closed@2x.png",
+        "layer0.texture": "OceanicSeti/Main/fold-closed@2x.png",
         "layer0.opacity": 0.45,
         "layer0.inner_margin": 0,
         "content_margin": 8
@@ -238,7 +239,7 @@
     {
         "class": "fold_button_control",
         "attributes": ["expanded"],
-        "layer0.texture": "Seti_UI/Main/fold-open@2x.png"
+        "layer0.texture": "OceanicSeti/Main/fold-open@2x.png"
     },
     {
         "class": "fold_button_control",
@@ -252,7 +253,7 @@
     // Standard vertical scroll bar
     {
         "class": "scroll_bar_control",
-        "layer0.tint": [11,16,21],
+        "layer0.tint": [36,57,69],
         "layer0.opacity": 1,
         "layer0.inner_margin": 0,
         "blur": true
@@ -261,33 +262,33 @@
     {
         "class": "scroll_bar_control",
         "attributes": ["horizontal"],
-        "layer0.tint": [11,16,21],
+        "layer0.tint": [36,57,69],
         "layer0.inner_margin": 0,
         "blur": true
     },
     // Standard scroll bar corner
     {
         "class": "scroll_corner_control",
-        "layer0.tint":[11,16,21],
+        "layer0.tint":[36,57,69],
         "layer0.inner_margin": 0,
         "layer0.opacity": 1
     },
     // Standard vertical scroll puck
     {
         "class": "puck_control",
-        "layer0.tint":[22,31,39], // auto complete SB
+        "layer0.tint":[79,153,211], // auto complete SB
         "layer0.opacity": 1,
         "layer0.inner_margin": 0,
-        "content_margin": [3,0],
+        "content_margin": [2,0],
         "blur": false
     },
     // Standard horizontal scroll puck
     {
         "class": "puck_control",
         "attributes": ["horizontal"],
-        "layer0.tint":[22,31,39],
+        "layer0.tint":[79,153,211],
         "layer0.inner_margin": 0,
-        "content_margin": [12,3],
+        "content_margin": [12,2],
         "blur": false
     },
     // options
@@ -333,7 +334,8 @@
     {
         "class": "scroll_bar_control",
         "settings": ["overlay_scroll_bars"],
-        "layer0.tint":[28,31,38], // Main SB
+        // "layer0.tint":[28,31,38], // Main SB
+        "layer0.tint": [79,153,211],
         "layer0.inner_margin": [0,5],
         "blur": true
     },
@@ -391,7 +393,7 @@
         "class": "sheet_container_control",
         "settings": ["Seti_in_4_a_treat"],
         "layer0.opacity": 0,
-        "layer1.texture": "Seti_UI/Main/xyz/Empty.png",
+        "layer1.texture": "OceanicSeti/Main/xyz/Empty.png",
         "layer1.opacity": 1
     },
 
@@ -473,15 +475,15 @@
     // Tooltip container
     {
         "class": "tool_tip_control",
-        "layer0.tint": [22,31,39],
+        "layer0.tint": [43,61,77],
         "layer0.inner_margin": 1,
         "layer0.opacity": 1,
-        "content_margin": [10, 8]
+        "content_margin": [10, 10]
     },
     // Tooltip content
     {
         "class": "tool_tip_label_control",
-        "color": [138,177,194]
+        "color": [219,227,235]
     },
 
 //========================================================
@@ -491,9 +493,10 @@
     // Status bar container
     {
         "class": "status_bar",
-        "layer0.tint": [16,17,18],
+        // "layer0.tint": [16,17,18],
+        "layer0.tint": [36,57,69],
         "layer0.opacity": 1,
-        "content_margin": [20, 7, 10, 7]
+        "content_margin": [20, 5, 10, 5]
     },
     // Status bar button
     {
@@ -504,7 +507,8 @@
     {
         "class": "label_control",
         "parents": [{"class": "status_bar"}],
-        "color": [170,170,170]
+        "color": [195,195,195],
+        "font.face": "InputSansCompressed-ExtraLight",
     },
 
 //========================================================
@@ -515,7 +519,8 @@
     {
         "class": "sidebar_container",
         "layer0.opacity": 1,
-        "layer0.tint": [16,17,18],
+        // "layer0.tint": [16,17,18],
+        "layer0.tint": [36,57,69],
         "content_margin": [0,5,0,0]
     },
     // Sidebar tree || entries
@@ -569,8 +574,9 @@
     {
         "class": "tree_row",
         "layer0.texture": null,
-        "layer0.tint": [27, 28, 29],
-        "layer0.opacity": 0
+        // "layer0.tint": [27, 28, 29],
+        "layer0.tint": [47,75,91],
+        "layer0.opacity": 0,
     },
     // Sidebar row selected
     {
@@ -581,8 +587,10 @@
     // Sidebar heading
     {
         "class": "sidebar_heading",
-        "color": [55,72,74],
-        "font.bold": true
+        // "color": [55,72,74],
+        "color": [171,191,193],
+        "font.bold": true,
+        "font.face": "Oswald-Regular"
     },
     {
         "class": "sidebar_heading",
@@ -596,7 +604,8 @@
     // Sidebar files
     {
         "class": "sidebar_label",
-        "color": [170,170,170]
+        "color": [170,170,170],
+        "font.face": "InputSansCondensed-ExtraLight",
     },
     {
         "class": "sidebar_label",
@@ -607,13 +616,13 @@
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row","attributes": ["expandable"]}],
-        "color": [80,105,108],
+        "color": [138,165,168],
         "font.bold": false
     },
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row","attributes": ["expandable","hover"]}],
-        "color": [124,159,174]
+        "color": [139,218,255]
     },
     {
         "class": "sidebar_label",
@@ -635,7 +644,7 @@
     // Sidebar file close
     {
         "class": "close_button",
-        "layer0.texture": "Seti_UI/Main/close@2x.png",
+        "layer0.texture": "OceanicSeti/Main/close@2x.png",
         "layer0.opacity": 1,
         "layer0.inner_margin": 0,
         "content_margin": 8
@@ -649,32 +658,32 @@
     {
         "class": "close_button",
         "attributes": ["dirty"],
-        "layer0.texture": "Seti_UI/Main/circle@2x.png",
+        "layer0.texture": "OceanicSeti/Main/circle@2x.png",
         "layer0.opacity": 1
     },
     {
         "class": "close_button",
         "attributes": ["dirty"],
         "parents": [{"class": "tree_row","attributes": ["selected"]}],
-        "layer0.texture": "Seti_UI/Main/circle@2x.png"
+        "layer0.texture": "OceanicSeti/Main/circle@2x.png"
     },
     {
         "class": "close_button",
         "attributes": ["dirty"],
         "parents": [{"class": "tree_row","attributes": ["hover"]}],
-        "layer0.texture": "Seti_UI/Main/circle@2x.png",
+        "layer0.texture": "OceanicSeti/Main/circle@2x.png",
         "layer0.opacity": 1
     },
     // Sidebar file close hover
     {
         "class": "close_button",
         "attributes": ["hover"],
-        "layer0.texture": "Seti_UI/Main/close@2x.png"
+        "layer0.texture": "OceanicSeti/Main/close@2x.png"
     },
     {
         "class": "close_button",
         "parents": [{"class": "tree_row","attributes": ["hover","selected"]}],
-        "layer0.texture": "Seti_UI/Main/close@2x.png",
+        "layer0.texture": "OceanicSeti/Main/close@2x.png",
         "layer0.opacity": 1
     },
 
@@ -686,7 +695,7 @@
      {
         "class": "disclosure_button_control",
         "content_margin": 8,
-        "layer0.texture": "Seti_UI/Main/group-closed@2x.png",
+        "layer0.texture": "OceanicSeti/Main/group-closed@2x.png",
         "layer0.inner_margin": 0,
         "layer0.tint": [200, 200, 200],
         "layer0.opacity": 1
@@ -714,13 +723,13 @@
     {
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
-        "layer0.texture": "Seti_UI/Main/group-open@2x.png"
+        "layer0.texture": "OceanicSeti/Main/group-open@2x.png"
     },
 
     // Sidebar folder closed
     {
         "class": "icon_folder",
-        "layer0.texture": "Seti_UI/Main/folder@2x.png",
+        "layer0.texture": "OceanicSeti/Main/folder@2x.png",
         "layer0.opacity": 1,
         "layer0.inner_margin": 0,
         "content_margin": [7,0]
@@ -730,7 +739,7 @@
     {
         "class": "icon_folder",
         "settings": ["Seti_ClosedFolder_same"],
-        "layer0.texture": "Seti_UI/Main/folder_open@2x.png",
+        "layer0.texture": "OceanicSeti/Main/folder_open@2x.png",
         "layer0.opacity": 0.5,
     },
     {
@@ -741,13 +750,13 @@
     {
         "class": "icon_folder",
         "settings": ["Seti_ClosedFolder_dots"],
-        "layer0.texture": "Seti_UI/Main/xyz/folder-dots@2x.png",
+        "layer0.texture": "OceanicSeti/Main/xyz/folder-dots@2x.png",
     },
     // Sidebar folder opened
     {
         "class": "icon_folder",
         "parents": [{ "class": "tree_row", "attributes": ["expanded"]}],
-        "layer0.texture": "Seti_UI/Main/folder_open@2x.png",
+        "layer0.texture": "OceanicSeti/Main/folder_open@2x.png",
         "layer0.inner_margin": -5,
         "layer0.opacity": 1,
         "content_margin": [7,0],
@@ -760,14 +769,14 @@
         {
             "keyframes":
             [
-                "Seti_UI/Main/spinner7.png",
-                "Seti_UI/Main/spinner6.png",
-                "Seti_UI/Main/spinner5.png",
-                "Seti_UI/Main/spinner4.png",
-                "Seti_UI/Main/spinner3.png",
-                "Seti_UI/Main/spinner2.png",
-                "Seti_UI/Main/spinner1.png",
-                "Seti_UI/Main/spinner.png"
+                "OceanicSeti/Main/spinner7.png",
+                "OceanicSeti/Main/spinner6.png",
+                "OceanicSeti/Main/spinner5.png",
+                "OceanicSeti/Main/spinner4.png",
+                "OceanicSeti/Main/spinner3.png",
+                "OceanicSeti/Main/spinner2.png",
+                "OceanicSeti/Main/spinner1.png",
+                "OceanicSeti/Main/spinner.png"
             ],
             "loop": true,
             "frame_time": 0.075
@@ -808,7 +817,7 @@
     // Text input field item
     {
         "class": "text_line_control",
-        "layer0.tint": [21,23,24], // is the same color of BG in widget file
+        "layer0.tint": [36,57,69], // is the same color of BG in widget file
         "layer0.opacity": 1,
         "content_margin": [3,1,5,0] // control the search panel height , line padding also effects this
     },
@@ -817,13 +826,13 @@
     {
         "class": "dropdown_button_control",
         "content_margin": 7,
-        "layer0.texture": "Seti_UI/Main/text-field-list.png",
+        "layer0.texture": "OceanicSeti/Main/text-field-list.png",
         "layer0.opacity": 1
     },
     {
         "class": "dropdown_button_control",
         "attributes": ["hover"],
-        "layer0.texture": "Seti_UI/Main/text-field-list-hover.png"
+        "layer0.texture": "OceanicSeti/Main/text-field-list-hover.png"
     },
 
 //========================================================
@@ -834,13 +843,13 @@
     {
         "class": "panel_control",
         "layer0.opacity": 1,
-        "layer0.tint": [16,17,18],
+        "layer0.tint": [36,57,69],
         "content_margin": 0
     },
     // Quick panel background
     {
         "class": "overlay_control",
-        "layer1.tint": [36,50,64],
+        "layer1.tint": [36,57,69],
         "layer1.opacity": 1,
         "layer0.opacity": 0,
         "content_margin": 0
@@ -850,7 +859,7 @@
         "class": "overlay_control",
         "settings": ["Seti_rainbow"],
         "layer1.opacity": 0,
-        "layer0.texture": "Seti_UI/Main/xyz/quick_bar.png",
+        "layer0.texture": "OceanicSeti/Main/xyz/quick_bar.png",
         "layer0.opacity": 1
     },
 
@@ -861,28 +870,28 @@
     {
         "class": "quick_panel",
         "row_padding": [10,8],
-        "layer0.tint": [16,17,18],
+        "layer0.tint": [36,57,69],
         "layer0.opacity": 1
     },
     {
         "class": "quick_panel_row",
-        "layer0.tint": [16,17,18],
+        "layer0.tint": [36,57,69],
         "layer0.opacity": 1
     },
     {
         "class": "quick_panel_row",
         "attributes": ["hover"],
-        "layer0.tint": [3,4,5]
+        "layer0.tint": [47,75,91]
     },
     {
         "class": "quick_panel_row",
         "attributes": ["selected"],
-        "layer0.tint": [38, 38, 38]
+        "layer0.tint": [64,103,125]
     },
     {
         "class": "quick_panel_label",
         "fg": [255,255,255],
-        "match_fg": [104,81,49],
+        "match_fg": [35,223,168],
         "selected_fg": [255,255,255],
         "selected_match_fg": [255,223,0]
     },
@@ -905,18 +914,18 @@
 
     {
         "class": "mini_quick_panel_row",
-        "layer0.tint": [16,17,18],
-        "layer0.opacity": 1
+        "layer0.tint": [36,57,69],
+        "layer0.opacity": 1,
     },
     {
         "class": "mini_quick_panel_row",
         "attributes": ["hover"],
-        "layer0.tint": [38, 38, 38]
+        "layer0.tint": [47,75,91]
     },
     {
         "class": "mini_quick_panel_row",
         "attributes": ["selected"],
-        "layer0.tint": [60,71,81]
+        "layer0.tint": [64,113,125]
     },
 
 //========================================================
@@ -926,17 +935,17 @@
     {
         "class": "popup_control",
         "content_margin": 0,
-        "layer0.tint": [16,17,18],
+        "layer0.tint": [47,75,91],
         "layer0.opacity": 1
     },
     {
         "class": "auto_complete",
-        "row_padding": [3,2]
+        "row_padding": [3,6]
     },
     {
         "class": "auto_complete_label",
         "fg": [255,255,255],
-        "match_fg": [104,81,49],
+        "match_fg": [35,223,168],
         "selected_fg": [255,255,255],
         "selected_match_fg": [255,223,0]
     },
@@ -948,7 +957,7 @@
         "class": "table_row",
         "attributes": ["selected"],
         "layer0.opacity": 1,
-        "layer0.tint": [60,71,81]
+        "layer0.tint": [64,113,125]
     },
 
 //========================================================
@@ -991,13 +1000,13 @@
     {
         "class": "fold_button_control",
         "settings": ["Seti_pad_5"],
-        "layer0.texture": "Seti_UI/Main/xyz/fold-closed-5@2x.png",
+        "layer0.texture": "OceanicSeti/Main/xyz/fold-closed-5@2x.png",
     },
     {
         "class": "fold_button_control",
         "settings": ["Seti_pad_5"],
         "attributes": ["expanded"],
-        "layer0.texture": "Seti_UI/Main/xyz/fold-open-5@2x.png",
+        "layer0.texture": "OceanicSeti/Main/xyz/fold-open-5@2x.png",
     },
     // 3
     {
@@ -1028,13 +1037,13 @@
     {
         "class": "fold_button_control",
         "settings": ["Seti_pad_3"],
-        "layer0.texture": "Seti_UI/Main/xyz/fold-closed-3@2x.png",
+        "layer0.texture": "OceanicSeti/Main/xyz/fold-closed-3@2x.png",
     },
     {
         "class": "fold_button_control",
         "settings": ["Seti_pad_3"],
         "attributes": ["expanded"],
-        "layer0.texture": "Seti_UI/Main/xyz/fold-open-3@2x.png",
+        "layer0.texture": "OceanicSeti/Main/xyz/fold-open-3@2x.png",
     },
     //
 
@@ -1080,8 +1089,8 @@
     // Regex search button
     {
         "class": "icon_regex",
-        "layer0.texture": "Seti_UI/Main/regex@2x.png",
-        "layer0.tint": [96,125,139],
+        "layer0.texture": "OceanicSeti/Main/regex@2x.png",
+        "layer0.tint": [123,150,163],
         "layer0.opacity": 1,
         "content_margin": 8
     },
@@ -1098,8 +1107,8 @@
     // Case sensitive search button
     {
         "class": "icon_case",
-        "layer0.texture": "Seti_UI/Main/casesens@2x.png",
-        "layer0.tint": [96,125,139],
+        "layer0.texture": "OceanicSeti/Main/casesens@2x.png",
+        "layer0.tint": [123,150,163],
         "layer0.opacity": 1,
         "content_margin": 8
     },
@@ -1116,8 +1125,8 @@
     // Match whole word search button
     {
         "class": "icon_whole_word",
-        "layer0.texture": "Seti_UI/Main/wholeword@2x.png",
-        "layer0.tint": [96,125,139],
+        "layer0.texture": "OceanicSeti/Main/wholeword@2x.png",
+        "layer0.tint": [123,150,163],
         "layer0.opacity": 1,
         "content_margin": 8
     },
@@ -1139,8 +1148,8 @@
     // Show search context button
     {
         "class": "icon_context",
-        "layer0.texture": "Seti_UI/Main/context@2x.png",
-        "layer0.tint": [96,125,139],
+        "layer0.texture": "OceanicSeti/Main/context@2x.png",
+        "layer0.tint": [123,150,163],
         "layer0.opacity": 1,
         "content_margin": 8
     },
@@ -1157,8 +1166,8 @@
     // Use search buffer
     {
         "class": "icon_use_buffer",
-        "layer0.texture": "Seti_UI/Main/buffer@2x.png",
-        "layer0.tint": [96,125,139],
+        "layer0.texture": "OceanicSeti/Main/buffer@2x.png",
+        "layer0.tint": [123,150,163],
         "layer0.opacity": 1,
         "content_margin": 8
     },
@@ -1180,8 +1189,8 @@
     // Reverse search direction button (ST2 only)
     {
         "class": "icon_reverse",
-        "layer0.texture": "Seti_UI/Main/reverse@2x.png",
-        "layer0.tint": [96,125,139],
+        "layer0.texture": "OceanicSeti/Main/reverse@2x.png",
+        "layer0.tint": [123,150,163],
         "layer0.opacity": 1,
         "content_margin": 8
     },
@@ -1198,8 +1207,8 @@
     // Search wrap button
     {
         "class": "icon_wrap",
-        "layer0.texture": "Seti_UI/Main/wrap@2x.png",
-        "layer0.tint": [96,125,139],
+        "layer0.texture": "OceanicSeti/Main/wrap@2x.png",
+        "layer0.tint": [123,150,163],
         "layer0.opacity": 1,
         "content_margin": 8
     },
@@ -1216,8 +1225,8 @@
     // Search in selection button
     {
         "class": "icon_in_selection",
-        "layer0.texture": "Seti_UI/Main/selection@2x.png",
-        "layer0.tint": [96,125,139],
+        "layer0.texture": "OceanicSeti/Main/selection@2x.png",
+        "layer0.tint": [123,150,163],
         "layer0.opacity": 1,
         "content_margin": 8
     },
@@ -1239,8 +1248,8 @@
     // Preserve case button
     {
         "class": "icon_preserve_case",
-        "layer0.texture": "Seti_UI/Main/casesens@2x.png",
-        "layer0.tint": [96,125,139],
+        "layer0.texture": "OceanicSeti/Main/casesens@2x.png",
+        "layer0.tint": [123,150,163],
         "layer0.opacity": 1,
         "content_margin": 8
     },
@@ -1262,8 +1271,8 @@
     // Highlight results button
     {
         "class": "icon_highlight",
-        "layer0.texture": "Seti_UI/Main/highlight@2x.png",
-        "layer0.tint": [96,125,139],
+        "layer0.texture": "OceanicSeti/Main/highlight@2x.png",
+        "layer0.tint": [123,150,163],
         "layer0.opacity": 1,
         "content_margin": 8
     },

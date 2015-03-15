@@ -1,0 +1,3 @@
+[submodule "ColorScheme/oceanic-next-theme"]
+	path = ColorScheme/oceanic-next-theme
+	url = https://github.com/voronianski/oceanic-next-theme.git
